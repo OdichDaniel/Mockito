@@ -17,13 +17,10 @@ public class UnitTest {
     @Test
     public void should_perform_addition(){
 
-
         Mockito.when(calculator.add(4, 5)).thenCallRealMethod();
         int answer = calculator.add(4, 5);
 
         Assertions.assertEquals(9, answer);
-
-        Mockito.verify(calculator).add(4, 5);
 
         Keypad keypad = Mockito.spy(Keypad.class);
 
