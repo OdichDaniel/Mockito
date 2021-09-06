@@ -26,5 +26,7 @@ public class UnitTest {
 
         Mockito.when(calculator.getKeypad()).thenReturn(keypad);
 
+        System.out.println(calculator.getKeypad().getType());
+
     }
 }

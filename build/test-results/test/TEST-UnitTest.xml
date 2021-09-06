@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-06T01:24:32" hostname="MACs-MacBook-Pro.local" time="1.131">
+<testsuite name="UnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-06T01:47:22" hostname="MACs-MacBook-Pro.local" time="1.093">
   <properties/>
-  <testcase name="should_perform_addition()" classname="UnitTest" time="1.131"/>
+  <testcase name="should_perform_addition()" classname="UnitTest" time="1.093"/>
   <system-out><![CDATA[add method is called
 Qwerty
 ]]></system-out>
