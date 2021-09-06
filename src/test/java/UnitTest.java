@@ -28,11 +28,15 @@ public class UnitTest {
 
         Assertions.assertEquals("Qwerty", calculator.getKeypad().getType());
 
-        Mockito.when(calculator.getName()).thenReturn("cal");
-        Assertions.assertEquals("cal", calculator.getName());
 
-        Mockito.verify(calculator, Mockito.times(1)).getName();
+        Mockito.doCallRealMethod().when(calculator).setName("Calculator");
+        calculator.setName("Calculator");
 
+        Mockito.verify(calculator, Mockito.times(1)).setName("Calculator");
+
+        Mockito.when(calculator.getName()).thenReturn("Calculator");
+
+        Assertions.assertEquals("Calculator", calculator.getName());
 
 
     }
