@@ -26,7 +26,14 @@ public class UnitTest {
 
         Mockito.when(calculator.getKeypad()).thenReturn(keypad);
 
-        System.out.println(calculator.getKeypad().getType());
+        Assertions.assertEquals("Qwerty", calculator.getKeypad().getType());
+
+        Mockito.when(calculator.getName()).thenReturn("cal");
+        Assertions.assertEquals("cal", calculator.getName());
+
+        Mockito.verify(calculator, Mockito.times(1)).getName();
+
+
 
     }
 }

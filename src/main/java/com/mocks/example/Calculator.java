@@ -12,12 +12,15 @@ public class Calculator {
     }
     public int add(int x, int y){
 
-        System.out.println("add method is called");
         return x + y;
     }
 
     public String getName(){
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Keypad getKeypad() {
