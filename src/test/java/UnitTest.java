@@ -20,7 +20,7 @@ public class UnitTest {
         Mockito.when(calculator.add(4, 5)).thenCallRealMethod();
         int answer = calculator.add(4, 5);
 
-        Assertions.assertEquals(9, answer);
+        Assertions.assertEquals(10, answer);
 
         Mockito.verify(calculator).add(4, 5);
 
@@ -28,6 +28,5 @@ public class UnitTest {
 
         Mockito.when(calculator.getKeypad()).thenReturn(keypad);
 
-        System.out.println(calculator.getKeypad().getType());
     }
 }
